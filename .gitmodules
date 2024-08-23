@@ -1,0 +1,3 @@
+[submodule "Assets/External/ChUnityGameLibrary"]
+	path = Assets/External/ChUnityGameLibrary
+	url = https://github.com/Chronoss0518/ChUnityGameLibrary
