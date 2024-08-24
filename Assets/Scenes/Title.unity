@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -155,6 +155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit
@@ -263,17 +264,17 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 2130066680163690131}
-          m_TargetAssemblyTypeName: ChUnity._3D_.AnimationControlFlg, Assembly-CSharp
-          m_MethodName: SetTrue
-          m_Mode: 1
+        - m_Target: {fileID: 1823901465}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
-            m_BoolArgument: 0
+            m_BoolArgument: 1
           m_CallState: 2
 --- !u!114 &51075530
 MonoBehaviour:
@@ -641,7 +642,7 @@ CanvasRenderer:
   m_CullTransparentMesh: 1
 --- !u!95 &368776359
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -658,7 +659,8 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &368776360
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1270,7 +1272,7 @@ CanvasRenderer:
   m_CullTransparentMesh: 1
 --- !u!95 &1493807646
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1287,7 +1289,8 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &1493807647
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1592,6 +1595,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fcd0fa01e5797984792b1d835c39fd32, type: 3}
+--- !u!1 &1823901465 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2130066679890941851, guid: 078073afcd88baf4abbedf4a1ba112b8, type: 3}
+  m_PrefabInstance: {fileID: 2130066680163690128}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1862633820
 GameObject:
   m_ObjectHideFlags: 0
@@ -1979,7 +1987,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4778506250467045098, guid: 078073afcd88baf4abbedf4a1ba112b8, type: 3}
   m_PrefabInstance: {fileID: 2130066680163690128}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1823901465}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a1c444b376cf4c84fa6807c78993c57e, type: 3}
@@ -1990,21 +1998,10 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1052790162289002657, guid: 078073afcd88baf4abbedf4a1ba112b8, type: 3}
   m_PrefabInstance: {fileID: 2130066680163690128}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1823901465}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 138dd803d9658fd45af8daf3fd54b49a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &2130066680163690131 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2130066679890941824, guid: 078073afcd88baf4abbedf4a1ba112b8, type: 3}
-  m_PrefabInstance: {fileID: 2130066680163690128}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2392715ddd9b88f46a0357bc5cec08a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &8012677851013498845
