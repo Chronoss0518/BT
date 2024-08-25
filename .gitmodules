@@ -1,6 +1,3 @@
-[submodule "Assets/External/ChUnityGameLibrary"]
-	path = Assets/External/ChUnityGameLibrary
-	url = https://github.com/Chronoss0518/ChUnityGameLibrary
 [submodule "Assets/External/ChTextMesh"]
 	path = Assets/External/ChTextMesh
 	url = https://github.com/Chronoss0518/ChUnity_TextMeshPro
