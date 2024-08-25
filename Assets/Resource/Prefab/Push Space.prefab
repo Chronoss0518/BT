@@ -12,11 +12,11 @@ GameObject:
   - component: {fileID: 2130066679890941854}
   - component: {fileID: 2130066679890941853}
   - component: {fileID: 2130066679890941855}
-  - component: {fileID: 2130066679890941824}
-  - component: {fileID: 480396546523973940}
-  - component: {fileID: 7163115091609279702}
-  - component: {fileID: 1052790162289002657}
-  - component: {fileID: 4778506250467045098}
+  - component: {fileID: 5776972088604984887}
+  - component: {fileID: 2559104869459414828}
+  - component: {fileID: 896914980003241204}
+  - component: {fileID: 8155152779387118742}
+  - component: {fileID: 1687978726170244174}
   m_Layer: 5
   m_Name: Push Space
   m_TagString: Untagged
@@ -143,7 +143,7 @@ MonoBehaviour:
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!95 &2130066679890941855
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -160,8 +160,9 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &2130066679890941824
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &5776972088604984887
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -170,13 +171,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 2130066679890941851}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2392715ddd9b88f46a0357bc5cec08a7, type: 3}
+  m_Script: {fileID: 11500000, guid: 0169f6fa7ebfdc14793194613dd0c3b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 2130066679890941855}
   motionTimeValueName: 
   flgName: Push
---- !u!114 &480396546523973940
+--- !u!114 &2559104869459414828
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -185,7 +186,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2130066679890941851}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8aaa164b38ca6d44f8db27f275651a8c, type: 3}
+  m_Script: {fileID: 11500000, guid: 4e48ec30f076a6c4d8e235400683502d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   type: 1
@@ -193,10 +194,10 @@ MonoBehaviour:
   action:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2130066679890941824}
+      - m_Target: {fileID: 5776972088604984887}
         m_TargetAssemblyTypeName: ChUnity._3D_.AnimationControlFlg, Assembly-CSharp
-        m_MethodName: SetFlg
-        m_Mode: 6
+        m_MethodName: SetTrue
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -205,7 +206,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 1052790162289002657}
+      - m_Target: {fileID: 8155152779387118742}
         m_TargetAssemblyTypeName: ChUnity.Common.Event.AlarmEvent, Assembly-CSharp
         m_MethodName: StartTimer
         m_Mode: 1
@@ -215,9 +216,9 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
---- !u!114 &7163115091609279702
+--- !u!114 &896914980003241204
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -226,10 +227,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2130066679890941851}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 710d6fe5532c31c4e9e615e7cc7aee37, type: 3}
+  m_Script: {fileID: 11500000, guid: 9cf00c17e57f92048b0989cfc4bcdb04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1052790162289002657
+--- !u!114 &8155152779387118742
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -238,14 +239,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 2130066679890941851}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 138dd803d9658fd45af8daf3fd54b49a, type: 3}
+  m_Script: {fileID: 11500000, guid: bbbac2dfa8242304b8458f98a3505d32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   alarmSeconds: 1
   action:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7163115091609279702}
+      - m_Target: {fileID: 896914980003241204}
         m_TargetAssemblyTypeName: SceneChanger, Assembly-CSharp
         m_MethodName: SceneChangeFromNo
         m_Mode: 3
@@ -257,7 +258,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &4778506250467045098
+--- !u!114 &1687978726170244174
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -266,7 +267,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2130066679890941851}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1c444b376cf4c84fa6807c78993c57e, type: 3}
+  m_Script: {fileID: 11500000, guid: 6a3c4d0757c7a274a9635b4691909317, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   targetObject: {fileID: 2130066679890941851}

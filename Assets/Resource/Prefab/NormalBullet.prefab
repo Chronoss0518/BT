@@ -277,9 +277,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8029403888605672484}
-  - component: {fileID: 7903982114342525570}
-  - component: {fileID: 274441912416847924}
-  - component: {fileID: 284668726198408753}
+  - component: {fileID: 3410852138101721650}
+  - component: {fileID: 2988050904750183387}
+  - component: {fileID: 7854387648406489787}
   m_Layer: 0
   m_Name: NormalBullet
   m_TagString: Untagged
@@ -305,7 +305,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7903982114342525570
+--- !u!114 &3410852138101721650
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -314,12 +314,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 7216452047280500382}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a753b0ed25d6ec498add78fcc60d1ac, type: 3}
+  m_Script: {fileID: 11500000, guid: 29c3900c0bc648d43bff41fd6b204949, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   targetObject: {fileID: 1776742631080016607, guid: db7735cf5710cc84f99e3c461fe987cd, type: 3}
   baseObejct: {fileID: 9146066418057177390}
---- !u!114 &274441912416847924
+--- !u!114 &2988050904750183387
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -328,15 +328,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 7216452047280500382}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b4982fdce19d6114791333fc0059db1b, type: 3}
+  m_Script: {fileID: 11500000, guid: 8580ca2f795de984daa7a7d367008880, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   maxCount: 1
-  countingEventFlg: 1
+  countingEventFlg: 0
   action:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 284668726198408753}
+      - m_Target: {fileID: 7854387648406489787}
         m_TargetAssemblyTypeName: ChUnity.Common.Event.AlarmEvent, Assembly-CSharp
         m_MethodName: StartTimer
         m_Mode: 1
@@ -348,7 +348,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 7903982114342525570}
+      - m_Target: {fileID: 3410852138101721650}
         m_TargetAssemblyTypeName: ChUnity.ObjectControl.LoadGameObject, Assembly-CSharp
         m_MethodName: LoadObjectBaseUnChild
         m_Mode: 1
@@ -360,7 +360,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &284668726198408753
+--- !u!114 &7854387648406489787
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -369,14 +369,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 7216452047280500382}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 138dd803d9658fd45af8daf3fd54b49a, type: 3}
+  m_Script: {fileID: 11500000, guid: bbbac2dfa8242304b8458f98a3505d32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   alarmSeconds: 3
   action:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 274441912416847924}
+      - m_Target: {fileID: 2988050904750183387}
         m_TargetAssemblyTypeName: ChUnity.Common.CountDownEvent, Assembly-CSharp
         m_MethodName: ReSet
         m_Mode: 1

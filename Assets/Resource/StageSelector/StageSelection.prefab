@@ -9,10 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1555702011075794587}
-  - component: {fileID: 1597101702730996210}
+  - component: {fileID: 4466571018375341227}
   - component: {fileID: 6421549401693888947}
-  - component: {fileID: 3448966948192832774}
-  - component: {fileID: 5938918569473436580}
+  - component: {fileID: 3078423537517386132}
+  - component: {fileID: 3100647170608042863}
   m_Layer: 0
   m_Name: StageSelection
   m_TagString: Untagged
@@ -39,7 +39,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1597101702730996210
+--- !u!114 &4466571018375341227
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -48,7 +48,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 493489406194509235}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 710d6fe5532c31c4e9e615e7cc7aee37, type: 3}
+  m_Script: {fileID: 11500000, guid: 9cf00c17e57f92048b0989cfc4bcdb04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &6421549401693888947
@@ -60,11 +60,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 493489406194509235}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1c444b376cf4c84fa6807c78993c57e, type: 3}
+  m_Script: {fileID: 11500000, guid: 6a3c4d0757c7a274a9635b4691909317, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   targetObject: {fileID: 493489406194509235}
---- !u!114 &3448966948192832774
+--- !u!114 &3078423537517386132
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -73,26 +73,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 493489406194509235}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 138dd803d9658fd45af8daf3fd54b49a, type: 3}
+  m_Script: {fileID: 11500000, guid: bbbac2dfa8242304b8458f98a3505d32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   alarmSeconds: 1
   action:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1597101702730996210}
+      - m_Target: {fileID: 4466571018375341227}
         m_TargetAssemblyTypeName: SceneChanger, Assembly-CSharp
         m_MethodName: SceneChangeFromNo
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
+          m_IntArgument: 4
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &5938918569473436580
+--- !u!114 &3100647170608042863
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -101,7 +101,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 493489406194509235}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8aaa164b38ca6d44f8db27f275651a8c, type: 3}
+  m_Script: {fileID: 11500000, guid: 4e48ec30f076a6c4d8e235400683502d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   type: 1
@@ -109,7 +109,7 @@ MonoBehaviour:
   action:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3448966948192832774}
+      - m_Target: {fileID: 3078423537517386132}
         m_TargetAssemblyTypeName: ChUnity.Common.Event.AlarmEvent, Assembly-CSharp
         m_MethodName: StartTimer
         m_Mode: 1
@@ -142,8 +142,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3720269674887651500}
-  - component: {fileID: 5170209780812395573}
-  - component: {fileID: 1715943671575159540}
+  - component: {fileID: 3593964818354636260}
+  - component: {fileID: 8931336576980223084}
   - component: {fileID: 342200094611696012}
   m_Layer: 0
   m_Name: ChangeSelector
@@ -167,7 +167,7 @@ Transform:
   m_Father: {fileID: 1555702011075794587}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5170209780812395573
+--- !u!114 &3593964818354636260
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -176,7 +176,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2226184398706492589}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8aaa164b38ca6d44f8db27f275651a8c, type: 3}
+  m_Script: {fileID: 11500000, guid: 4e48ec30f076a6c4d8e235400683502d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   type: 1
@@ -196,19 +196,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &1715943671575159540
+--- !u!114 &8931336576980223084
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -217,7 +205,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2226184398706492589}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8aaa164b38ca6d44f8db27f275651a8c, type: 3}
+  m_Script: {fileID: 11500000, guid: 4e48ec30f076a6c4d8e235400683502d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   type: 1
@@ -237,18 +225,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &342200094611696012
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -258,7 +234,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2226184398706492589}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1c444b376cf4c84fa6807c78993c57e, type: 3}
+  m_Script: {fileID: 11500000, guid: 6a3c4d0757c7a274a9635b4691909317, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   targetObject: {fileID: 2226184398706492589}

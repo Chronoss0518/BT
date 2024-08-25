@@ -202,27 +202,28 @@ MonoBehaviour:
   m_GameObject: {fileID: 51075525}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5243ec66df94dfb4a8d538cd03218f27, type: 3}
+  m_Script: {fileID: 11500000, guid: 1500498bf2cce1c4fb24d9f0cb3c7563, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   counter: 2
   loopFlg: 0
+  loopMaxCount: 0
   countAction:
   - count: 1
     events:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 2130066680163690129}
-          m_TargetAssemblyTypeName: ChUnity.ObjectControl.ObjectActivity, Assembly-CSharp
+        - m_Target: {fileID: 1823901465}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_MethodName: SetActive
-          m_Mode: 1
+          m_Mode: 6
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
-            m_BoolArgument: 0
+            m_BoolArgument: 1
           m_CallState: 2
         - m_Target: {fileID: 1493807647}
           m_TargetAssemblyTypeName: ChUnity._3D_.AnimationControllerBase, Assembly-CSharp
@@ -234,9 +235,9 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 1
             m_StringArgument: 
-            m_BoolArgument: 0
+            m_BoolArgument: 1
           m_CallState: 2
-        - m_Target: {fileID: 368776360}
+        - m_Target: {fileID: 368776361}
           m_TargetAssemblyTypeName: ChUnity._3D_.AnimationControllerBase, Assembly-CSharp
           m_MethodName: SetNowAnimationNormalizeTime
           m_Mode: 4
@@ -246,13 +247,13 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 1
             m_StringArgument: 
-            m_BoolArgument: 0
+            m_BoolArgument: 1
           m_CallState: 2
   - count: 0
     events:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 2130066680163690130}
+        - m_Target: {fileID: 2130066680163690129}
           m_TargetAssemblyTypeName: ChUnity.Common.Event.AlarmEvent, Assembly-CSharp
           m_MethodName: StartTimer
           m_Mode: 1
@@ -285,7 +286,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 51075525}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8aaa164b38ca6d44f8db27f275651a8c, type: 3}
+  m_Script: {fileID: 11500000, guid: 4e48ec30f076a6c4d8e235400683502d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   type: 1
@@ -357,7 +358,7 @@ MonoBehaviour:
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
-  m_ScreenMatchMode: 0
+  m_ScreenMatchMode: 1
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
@@ -515,6 +516,7 @@ GameObject:
   - component: {fileID: 368776358}
   - component: {fileID: 368776357}
   - component: {fileID: 368776359}
+  - component: {fileID: 368776361}
   - component: {fileID: 368776360}
   m_Layer: 5
   m_Name: T
@@ -668,9 +670,37 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 368776355}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94865ec963cb9844397351b8700e8c5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 368776359}
+  act:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 51075529}
+        m_TargetAssemblyTypeName: ChUnity.Event.CounterEvent, Assembly-CSharp
+        m_MethodName: CountDown
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &368776361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 368776355}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 652d44c387e13314baf0d47d80a79080, type: 3}
+  m_Script: {fileID: 11500000, guid: 09ee7e33093db274a954e02e66d9b929, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 368776359}
@@ -1300,7 +1330,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1493807642}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 652d44c387e13314baf0d47d80a79080, type: 3}
+  m_Script: {fileID: 11500000, guid: 09ee7e33093db274a954e02e66d9b929, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 1493807646}
@@ -1315,7 +1345,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1493807642}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: febaf8e437e00c84b8a3a0817fc733cb, type: 3}
+  m_Script: {fileID: 11500000, guid: 94865ec963cb9844397351b8700e8c5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 1493807646}
@@ -1645,7 +1675,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1862633820}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf9e31239974f7a4e9940edb6047af0b, type: 3}
+  m_Script: {fileID: 11500000, guid: 581d8c435f8ab08498a387c13a28e23d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   targetObject: {fileID: 0}
@@ -1867,7 +1897,7 @@ PrefabInstance:
     - target: {fileID: 480396546523973940, guid: 078073afcd88baf4abbedf4a1ba112b8, type: 3}
       propertyPath: action.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 51075529}
+      objectReference: {fileID: 0}
     - target: {fileID: 480396546523973940, guid: 078073afcd88baf4abbedf4a1ba112b8, type: 3}
       propertyPath: action.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
       value: CountDown
@@ -1980,28 +2010,57 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2559104869459414828, guid: 078073afcd88baf4abbedf4a1ba112b8, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2559104869459414828, guid: 078073afcd88baf4abbedf4a1ba112b8, type: 3}
+      propertyPath: action.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2559104869459414828, guid: 078073afcd88baf4abbedf4a1ba112b8, type: 3}
+      propertyPath: action.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2559104869459414828, guid: 078073afcd88baf4abbedf4a1ba112b8, type: 3}
+      propertyPath: action.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 51075529}
+    - target: {fileID: 2559104869459414828, guid: 078073afcd88baf4abbedf4a1ba112b8, type: 3}
+      propertyPath: action.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2559104869459414828, guid: 078073afcd88baf4abbedf4a1ba112b8, type: 3}
+      propertyPath: action.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: CountDown
+      objectReference: {fileID: 0}
+    - target: {fileID: 2559104869459414828, guid: 078073afcd88baf4abbedf4a1ba112b8, type: 3}
+      propertyPath: action.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: ChUnity.Event.CounterEvent, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2559104869459414828, guid: 078073afcd88baf4abbedf4a1ba112b8, type: 3}
+      propertyPath: action.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2559104869459414828, guid: 078073afcd88baf4abbedf4a1ba112b8, type: 3}
+      propertyPath: action.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8155152779387118742, guid: 078073afcd88baf4abbedf4a1ba112b8, type: 3}
+      propertyPath: action.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 078073afcd88baf4abbedf4a1ba112b8, type: 3}
 --- !u!114 &2130066680163690129 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4778506250467045098, guid: 078073afcd88baf4abbedf4a1ba112b8, type: 3}
+  m_CorrespondingSourceObject: {fileID: 8155152779387118742, guid: 078073afcd88baf4abbedf4a1ba112b8, type: 3}
   m_PrefabInstance: {fileID: 2130066680163690128}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1823901465}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1c444b376cf4c84fa6807c78993c57e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &2130066680163690130 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1052790162289002657, guid: 078073afcd88baf4abbedf4a1ba112b8, type: 3}
-  m_PrefabInstance: {fileID: 2130066680163690128}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1823901465}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 138dd803d9658fd45af8daf3fd54b49a, type: 3}
+  m_Script: {fileID: 11500000, guid: bbbac2dfa8242304b8458f98a3505d32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &8012677851013498845
@@ -2011,6 +2070,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1085639185367245284, guid: c6f01b729e57baa4b89d38341c090aeb, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 21.812744
+      objectReference: {fileID: 0}
+    - target: {fileID: 1085639185367245284, guid: c6f01b729e57baa4b89d38341c090aeb, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -74
+      objectReference: {fileID: 0}
     - target: {fileID: 1126616539246869813, guid: c6f01b729e57baa4b89d38341c090aeb, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -2030,7 +2097,7 @@ PrefabInstance:
     - target: {fileID: 4465062991575200176, guid: c6f01b729e57baa4b89d38341c090aeb, type: 3}
       propertyPath: action.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 8012677851013498847}
+      objectReference: {fileID: 0}
     - target: {fileID: 4465062991575200176, guid: c6f01b729e57baa4b89d38341c090aeb, type: 3}
       propertyPath: action.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ShutDownApplication
@@ -2038,6 +2105,30 @@ PrefabInstance:
     - target: {fileID: 4465062991575200176, guid: c6f01b729e57baa4b89d38341c090aeb, type: 3}
       propertyPath: action.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: ChUnity.Common.ApplicationEnd, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5499673761674795878, guid: c6f01b729e57baa4b89d38341c090aeb, type: 3}
+      propertyPath: action.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5499673761674795878, guid: c6f01b729e57baa4b89d38341c090aeb, type: 3}
+      propertyPath: action.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5499673761674795878, guid: c6f01b729e57baa4b89d38341c090aeb, type: 3}
+      propertyPath: action.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 8012677851013498847}
+    - target: {fileID: 5499673761674795878, guid: c6f01b729e57baa4b89d38341c090aeb, type: 3}
+      propertyPath: action.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ShutDownApplication
+      objectReference: {fileID: 0}
+    - target: {fileID: 5499673761674795878, guid: c6f01b729e57baa4b89d38341c090aeb, type: 3}
+      propertyPath: action.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: ChUnity.Common.ApplicationEnd, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5499673761674795878, guid: c6f01b729e57baa4b89d38341c090aeb, type: 3}
+      propertyPath: action.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 7893606126238751456, guid: c6f01b729e57baa4b89d38341c090aeb, type: 3}
       propertyPath: m_RootOrder
@@ -2183,6 +2274,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 8012677851013498846}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ef99f3ddd5e5e74ca5a937398f3e9f4, type: 3}
+  m_Script: {fileID: 11500000, guid: fec85cbdfb55037419bcf0e444173f7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6370407256977777636}
   - component: {fileID: 7898051092460692931}
   - component: {fileID: 6544463236256781320}
-  - component: {fileID: 8232355077847548032}
+  - component: {fileID: 3586193868264207150}
   m_Layer: 0
   m_Name: LP2
   m_TagString: Untagged
@@ -84,7 +84,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &8232355077847548032
+--- !u!114 &3586193868264207150
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -93,7 +93,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 874853778023479497}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00ee98d30978b6e47a9862a0a6e482bb, type: 3}
+  m_Script: {fileID: 11500000, guid: 5690553fc76403148830cedc2945042d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   render: {fileID: 6544463236256781320}
@@ -106,8 +106,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4322370422423031579}
-  - component: {fileID: 8771794781052892902}
-  - component: {fileID: 3499007103598501832}
+  - component: {fileID: 6908056534923097347}
+  - component: {fileID: 5924563021358804851}
   m_Layer: 0
   m_Name: Life
   m_TagString: Untagged
@@ -133,7 +133,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8771794781052892902
+--- !u!114 &6908056534923097347
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -142,17 +142,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 4660281043610883498}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5243ec66df94dfb4a8d538cd03218f27, type: 3}
+  m_Script: {fileID: 11500000, guid: 1500498bf2cce1c4fb24d9f0cb3c7563, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   counter: 3
   loopFlg: 0
+  loopMaxCount: 0
   countAction:
   - count: 2
     events:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 7693553167459731908}
+        - m_Target: {fileID: 3644447554480390858}
           m_TargetAssemblyTypeName: MaterialController, Assembly-CSharp
           m_MethodName: SetColorRed
           m_Mode: 1
@@ -168,7 +169,7 @@ MonoBehaviour:
     events:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 8232355077847548032}
+        - m_Target: {fileID: 3586193868264207150}
           m_TargetAssemblyTypeName: MaterialController, Assembly-CSharp
           m_MethodName: SetColorRed
           m_Mode: 1
@@ -184,7 +185,7 @@ MonoBehaviour:
     events:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 8946910492578359725}
+        - m_Target: {fileID: 879454555117035498}
           m_TargetAssemblyTypeName: MaterialController, Assembly-CSharp
           m_MethodName: SetColorRed
           m_Mode: 1
@@ -196,7 +197,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
---- !u!114 &3499007103598501832
+--- !u!114 &5924563021358804851
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -205,7 +206,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4660281043610883498}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b12123493823004eb7efd7fc054fd64, type: 3}
+  m_Script: {fileID: 11500000, guid: 212ced4d30c05e243b213b5a7e30f9a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   targetObject: {fileID: 0}
@@ -220,7 +221,7 @@ GameObject:
   - component: {fileID: 3067635451830311657}
   - component: {fileID: 3635175761238627534}
   - component: {fileID: 5339095225128555967}
-  - component: {fileID: 8946910492578359725}
+  - component: {fileID: 879454555117035498}
   m_Layer: 0
   m_Name: LP3
   m_TagString: Untagged
@@ -293,7 +294,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &8946910492578359725
+--- !u!114 &879454555117035498
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -302,7 +303,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5534757991547493968}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00ee98d30978b6e47a9862a0a6e482bb, type: 3}
+  m_Script: {fileID: 11500000, guid: 5690553fc76403148830cedc2945042d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   render: {fileID: 5339095225128555967}
@@ -317,7 +318,7 @@ GameObject:
   - component: {fileID: 1769835560567801277}
   - component: {fileID: 1686148414079499875}
   - component: {fileID: 6169596019273075089}
-  - component: {fileID: 7693553167459731908}
+  - component: {fileID: 3644447554480390858}
   m_Layer: 0
   m_Name: LP1
   m_TagString: Untagged
@@ -390,7 +391,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &7693553167459731908
+--- !u!114 &3644447554480390858
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -399,7 +400,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7939577841986877179}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00ee98d30978b6e47a9862a0a6e482bb, type: 3}
+  m_Script: {fileID: 11500000, guid: 5690553fc76403148830cedc2945042d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   render: {fileID: 6169596019273075089}

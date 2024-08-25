@@ -111,9 +111,9 @@ GameObject:
   m_Component:
   - component: {fileID: 3238359175416990615}
   - component: {fileID: 3238359175416990612}
-  - component: {fileID: 7895875060682353511}
-  - component: {fileID: 999960500246791759}
-  - component: {fileID: 1147139884221635010}
+  - component: {fileID: 2151970118945417332}
+  - component: {fileID: 3448031544705531387}
+  - component: {fileID: 2475522508073956191}
   m_Layer: 0
   m_Name: GameMaster
   m_TagString: Untagged
@@ -156,7 +156,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
---- !u!114 &7895875060682353511
+--- !u!114 &2151970118945417332
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -165,17 +165,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 3238359175416990608}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5243ec66df94dfb4a8d538cd03218f27, type: 3}
+  m_Script: {fileID: 11500000, guid: 1500498bf2cce1c4fb24d9f0cb3c7563, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   counter: 4
   loopFlg: 0
+  loopMaxCount: 0
   countAction:
   - count: 3
     events:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 6469490882438677323}
+        - m_Target: {fileID: 8170258922655141088}
           m_TargetAssemblyTypeName: TextMeshController, Assembly-CSharp
           m_MethodName: SetText
           m_Mode: 5
@@ -187,7 +188,7 @@ MonoBehaviour:
             m_StringArgument: 2
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 6616506979378421002}
+        - m_Target: {fileID: 3517926471295110554}
           m_TargetAssemblyTypeName: ChUnity._3D_.AnimationControllerBase, Assembly-CSharp
           m_MethodName: AnimationPlay
           m_Mode: 3
@@ -203,7 +204,7 @@ MonoBehaviour:
     events:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 6469490882438677323}
+        - m_Target: {fileID: 8170258922655141088}
           m_TargetAssemblyTypeName: TextMeshController, Assembly-CSharp
           m_MethodName: SetText
           m_Mode: 5
@@ -215,7 +216,7 @@ MonoBehaviour:
             m_StringArgument: 1
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 6616506979378421002}
+        - m_Target: {fileID: 3517926471295110554}
           m_TargetAssemblyTypeName: ChUnity._3D_.AnimationControllerBase, Assembly-CSharp
           m_MethodName: AnimationPlay
           m_Mode: 3
@@ -231,7 +232,7 @@ MonoBehaviour:
     events:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 6469490882438677323}
+        - m_Target: {fileID: 8170258922655141088}
           m_TargetAssemblyTypeName: TextMeshController, Assembly-CSharp
           m_MethodName: SetText
           m_Mode: 5
@@ -240,10 +241,10 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: Game Start!
+            m_StringArgument: Game Start!!
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 6616506979378421002}
+        - m_Target: {fileID: 3517926471295110554}
           m_TargetAssemblyTypeName: ChUnity._3D_.AnimationControllerBase, Assembly-CSharp
           m_MethodName: AnimationPlay
           m_Mode: 3
@@ -259,7 +260,7 @@ MonoBehaviour:
     events:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 6469490882438677323}
+        - m_Target: {fileID: 8170258922655141088}
           m_TargetAssemblyTypeName: TextMeshController, Assembly-CSharp
           m_MethodName: SetText
           m_Mode: 5
@@ -271,67 +272,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: TextMeshController, Assembly-CSharp
-          m_MethodName: 
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: 
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: TextMeshController, Assembly-CSharp
-          m_MethodName: 
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: 
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: TextMeshController, Assembly-CSharp
-          m_MethodName: 
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: 
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: TextMeshController, Assembly-CSharp
-          m_MethodName: 
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: 
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: TextMeshController, Assembly-CSharp
-          m_MethodName: 
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: 
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
---- !u!114 &999960500246791759
+--- !u!114 &3448031544705531387
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -340,14 +281,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 3238359175416990608}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: febaf8e437e00c84b8a3a0817fc733cb, type: 3}
+  m_Script: {fileID: 11500000, guid: 94865ec963cb9844397351b8700e8c5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 6416700872272857908}
   act:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7895875060682353511}
+      - m_Target: {fileID: 2151970118945417332}
         m_TargetAssemblyTypeName: ChUnity.Event.CounterEvent, Assembly-CSharp
         m_MethodName: CountDown
         m_Mode: 1
@@ -359,7 +300,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &1147139884221635010
+--- !u!114 &2475522508073956191
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -368,7 +309,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3238359175416990608}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b4982fdce19d6114791333fc0059db1b, type: 3}
+  m_Script: {fileID: 11500000, guid: 8580ca2f795de984daa7a7d367008880, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   maxCount: 3
@@ -376,7 +317,7 @@ MonoBehaviour:
   action:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 9164630488638463994}
+      - m_Target: {fileID: 3302429829213923690}
         m_TargetAssemblyTypeName: ChUnity.Common.CountDownEvent, Assembly-CSharp
         m_MethodName: CountDown
         m_Mode: 1
@@ -397,10 +338,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2506658140146287286}
-  - component: {fileID: 1469032465720226195}
-  - component: {fileID: 8645598519065121849}
-  - component: {fileID: 2838726833854050980}
-  - component: {fileID: 1947527786824802856}
+  - component: {fileID: 4214842786342409729}
+  - component: {fileID: 6466106173645042636}
+  - component: {fileID: 1418245416784014427}
+  - component: {fileID: 2053316049234231602}
   m_Layer: 0
   m_Name: LoseSceneAlarm
   m_TagString: Untagged
@@ -423,7 +364,7 @@ Transform:
   m_Father: {fileID: 3238359175416990615}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1469032465720226195
+--- !u!114 &4214842786342409729
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -432,10 +373,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 5025711832179537424}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 710d6fe5532c31c4e9e615e7cc7aee37, type: 3}
+  m_Script: {fileID: 11500000, guid: 9cf00c17e57f92048b0989cfc4bcdb04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &8645598519065121849
+--- !u!114 &6466106173645042636
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -444,11 +385,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 5025711832179537424}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f56924a8f3a322d45ac5f7e0b53a79ff, type: 3}
+  m_Script: {fileID: 11500000, guid: 52fa019ee3c93284c993349f4923de4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 1598435622341224861}
---- !u!114 &2838726833854050980
+--- !u!114 &1418245416784014427
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -457,14 +398,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 5025711832179537424}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 138dd803d9658fd45af8daf3fd54b49a, type: 3}
+  m_Script: {fileID: 11500000, guid: bbbac2dfa8242304b8458f98a3505d32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   alarmSeconds: 3
   action:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1469032465720226195}
+      - m_Target: {fileID: 4214842786342409729}
         m_TargetAssemblyTypeName: SceneChanger, Assembly-CSharp
         m_MethodName: SceneChangeFromNo
         m_Mode: 3
@@ -476,7 +417,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &1947527786824802856
+--- !u!114 &2053316049234231602
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -485,7 +426,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5025711832179537424}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b4982fdce19d6114791333fc0059db1b, type: 3}
+  m_Script: {fileID: 11500000, guid: 8580ca2f795de984daa7a7d367008880, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   maxCount: 1
@@ -493,7 +434,7 @@ MonoBehaviour:
   action:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2838726833854050980}
+      - m_Target: {fileID: 1418245416784014427}
         m_TargetAssemblyTypeName: ChUnity.Common.Event.AlarmEvent, Assembly-CSharp
         m_MethodName: StartTimer
         m_Mode: 1
@@ -505,7 +446,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 8645598519065121849}
+      - m_Target: {fileID: 6466106173645042636}
         m_TargetAssemblyTypeName: TextMeshController, Assembly-CSharp
         m_MethodName: SetText
         m_Mode: 5
@@ -514,7 +455,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Game Set!
+          m_StringArgument: Game Set!!
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &5909110739529050797
@@ -526,10 +467,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 441949296261189388}
-  - component: {fileID: 7058975851566930329}
-  - component: {fileID: 168965974013850541}
-  - component: {fileID: 3301384210870374684}
-  - component: {fileID: 9164630488638463994}
+  - component: {fileID: 5099145468888886717}
+  - component: {fileID: 4225036621071287160}
+  - component: {fileID: 2994248389928956482}
+  - component: {fileID: 3302429829213923690}
   m_Layer: 0
   m_Name: ClearSceneAlarm
   m_TagString: Untagged
@@ -552,7 +493,7 @@ Transform:
   m_Father: {fileID: 3238359175416990615}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7058975851566930329
+--- !u!114 &5099145468888886717
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -561,10 +502,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 5909110739529050797}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 710d6fe5532c31c4e9e615e7cc7aee37, type: 3}
+  m_Script: {fileID: 11500000, guid: 9cf00c17e57f92048b0989cfc4bcdb04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &168965974013850541
+--- !u!114 &4225036621071287160
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -573,11 +514,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 5909110739529050797}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f56924a8f3a322d45ac5f7e0b53a79ff, type: 3}
+  m_Script: {fileID: 11500000, guid: 52fa019ee3c93284c993349f4923de4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 1598435622341224861}
---- !u!114 &3301384210870374684
+--- !u!114 &2994248389928956482
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -586,14 +527,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 5909110739529050797}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 138dd803d9658fd45af8daf3fd54b49a, type: 3}
+  m_Script: {fileID: 11500000, guid: bbbac2dfa8242304b8458f98a3505d32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   alarmSeconds: 3
   action:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7058975851566930329}
+      - m_Target: {fileID: 5099145468888886717}
         m_TargetAssemblyTypeName: SceneChanger, Assembly-CSharp
         m_MethodName: SceneChangeFromNo
         m_Mode: 3
@@ -605,7 +546,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &9164630488638463994
+--- !u!114 &3302429829213923690
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -614,7 +555,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5909110739529050797}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b4982fdce19d6114791333fc0059db1b, type: 3}
+  m_Script: {fileID: 11500000, guid: 8580ca2f795de984daa7a7d367008880, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   maxCount: 1
@@ -622,7 +563,7 @@ MonoBehaviour:
   action:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3301384210870374684}
+      - m_Target: {fileID: 2994248389928956482}
         m_TargetAssemblyTypeName: ChUnity.Common.Event.AlarmEvent, Assembly-CSharp
         m_MethodName: StartTimer
         m_Mode: 1
@@ -634,7 +575,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 168965974013850541}
+      - m_Target: {fileID: 4225036621071287160}
         m_TargetAssemblyTypeName: TextMeshController, Assembly-CSharp
         m_MethodName: SetText
         m_Mode: 5
@@ -643,7 +584,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Game Set!
+          m_StringArgument: Game Set!!
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &6917834330863898432
@@ -658,8 +599,8 @@ GameObject:
   - component: {fileID: 5623814737319855163}
   - component: {fileID: 1598435622341224861}
   - component: {fileID: 6416700872272857908}
-  - component: {fileID: 6469490882438677323}
-  - component: {fileID: 6616506979378421002}
+  - component: {fileID: 8170258922655141088}
+  - component: {fileID: 3517926471295110554}
   m_Layer: 5
   m_Name: Text (TMP) (1)
   m_TagString: Untagged
@@ -684,7 +625,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 136, y: -6.4999847}
+  m_AnchoredPosition: {x: 136, y: -6.5}
   m_SizeDelta: {x: -400, y: -400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5623814737319855163
@@ -717,8 +658,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 3
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 46db1e4822418dd4c93d3c3e2a50382f, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 46db1e4822418dd4c93d3c3e2a50382f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -786,7 +727,7 @@ MonoBehaviour:
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!95 &6416700872272857908
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -803,8 +744,9 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &6469490882438677323
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &8170258922655141088
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -813,11 +755,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 6917834330863898432}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f56924a8f3a322d45ac5f7e0b53a79ff, type: 3}
+  m_Script: {fileID: 11500000, guid: 52fa019ee3c93284c993349f4923de4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 1598435622341224861}
---- !u!114 &6616506979378421002
+--- !u!114 &3517926471295110554
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -826,7 +768,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6917834330863898432}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2392715ddd9b88f46a0357bc5cec08a7, type: 3}
+  m_Script: {fileID: 11500000, guid: 0169f6fa7ebfdc14793194613dd0c3b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 6416700872272857908}

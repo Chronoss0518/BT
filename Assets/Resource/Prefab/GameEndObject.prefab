@@ -9,8 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 196321091995122858}
-  - component: {fileID: 5578189556144500890}
-  - component: {fileID: 4465062991575200176}
+  - component: {fileID: 5122047722624907764}
+  - component: {fileID: 5499673761674795878}
   m_Layer: 0
   m_Name: GameEnd
   m_TagString: Untagged
@@ -34,7 +34,7 @@ Transform:
   m_Father: {fileID: 1085639185367245284}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5578189556144500890
+--- !u!114 &5122047722624907764
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -43,10 +43,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 196321091995122862}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 710d6fe5532c31c4e9e615e7cc7aee37, type: 3}
+  m_Script: {fileID: 11500000, guid: 9cf00c17e57f92048b0989cfc4bcdb04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &4465062991575200176
+--- !u!114 &5499673761674795878
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -55,7 +55,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 196321091995122862}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8aaa164b38ca6d44f8db27f275651a8c, type: 3}
+  m_Script: {fileID: 11500000, guid: 4e48ec30f076a6c4d8e235400683502d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   type: 1
@@ -63,7 +63,7 @@ MonoBehaviour:
   action:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5578189556144500890}
+      - m_Target: {fileID: 5122047722624907764}
         m_TargetAssemblyTypeName: SceneChanger, Assembly-CSharp
         m_MethodName: SceneChangeFromNo
         m_Mode: 3
@@ -84,7 +84,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 196321092226152919}
-  - component: {fileID: 1164834198558906173}
+  - component: {fileID: 2647031764500896379}
   m_Layer: 0
   m_Name: GameContinue
   m_TagString: Untagged
@@ -108,7 +108,7 @@ Transform:
   m_Father: {fileID: 1085639185367245284}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1164834198558906173
+--- !u!114 &2647031764500896379
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -117,7 +117,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 196321092226152920}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8aaa164b38ca6d44f8db27f275651a8c, type: 3}
+  m_Script: {fileID: 11500000, guid: 4e48ec30f076a6c4d8e235400683502d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   type: 1
@@ -138,7 +138,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: ChUnity.ObjectControl.ObjectActivity, Assembly-CSharp
         m_MethodName: 
         m_Mode: 1
         m_Arguments:
@@ -150,7 +150,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: ChUnity.ObjectControl.ObjectActivity, Assembly-CSharp
         m_MethodName: 
         m_Mode: 1
         m_Arguments:
@@ -162,7 +162,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: ChUnity.ObjectControl.ObjectActivity, Assembly-CSharp
         m_MethodName: 
         m_Mode: 1
         m_Arguments:
@@ -174,7 +174,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: ChUnity.ObjectControl.ObjectActivity, Assembly-CSharp
         m_MethodName: 
         m_Mode: 1
         m_Arguments:
@@ -408,7 +408,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3463161286947941367}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1c444b376cf4c84fa6807c78993c57e, type: 3}
+  m_Script: {fileID: 11500000, guid: 6a3c4d0757c7a274a9635b4691909317, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   targetObject: {fileID: 3463161286947941367}
@@ -560,7 +560,7 @@ GameObject:
   - component: {fileID: 7893606126238751462}
   - component: {fileID: 7893606126238751461}
   - component: {fileID: 7866235302791668645}
-  - component: {fileID: 7711654269052516055}
+  - component: {fileID: 2059016954662252147}
   m_Layer: 5
   m_Name: GameEndObject
   m_TagString: Untagged
@@ -659,11 +659,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 7893606126238751460}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1c444b376cf4c84fa6807c78993c57e, type: 3}
+  m_Script: {fileID: 11500000, guid: 6a3c4d0757c7a274a9635b4691909317, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   targetObject: {fileID: 7893606126238751460}
---- !u!114 &7711654269052516055
+--- !u!114 &2059016954662252147
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -672,7 +672,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7893606126238751460}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8aaa164b38ca6d44f8db27f275651a8c, type: 3}
+  m_Script: {fileID: 11500000, guid: 4e48ec30f076a6c4d8e235400683502d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   type: 1
@@ -682,61 +682,13 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 4410591125962644780}
         m_TargetAssemblyTypeName: ChUnity.ObjectControl.ObjectActivity, Assembly-CSharp
-        m_MethodName: SetActive
-        m_Mode: 1
+        m_MethodName: SetActivity
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ChUnity.ObjectControl.ObjectActivity, Assembly-CSharp
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ChUnity.ObjectControl.ObjectActivity, Assembly-CSharp
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ChUnity.ObjectControl.ObjectActivity, Assembly-CSharp
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ChUnity.ObjectControl.ObjectActivity, Assembly-CSharp
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
